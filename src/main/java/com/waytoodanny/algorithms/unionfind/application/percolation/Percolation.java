@@ -50,6 +50,7 @@ public class Percolation {
     int skipToBottomRow = width * width - width;
     return IntStream.range(0, sites.length)
         .skip(skipToBottomRow)
+        .parallel()
         .filter(this::isOpen)
         .filter(this::isFull)
         .findAny()
