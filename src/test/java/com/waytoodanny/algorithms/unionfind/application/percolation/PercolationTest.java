@@ -170,25 +170,4 @@ public class PercolationTest {
     Percolation sut = new Percolation(4);
     sut.open(4, 5);
   }
-
-  //------------------Additional------------------
-
-  @Test
-  public void neighbours() {
-    Percolation sut = new Percolation(3);
-
-    int[] result = sut.neighboursIndices(3, 2);
-    assertArrayEquals(new int[]{4, 8, 6}, result);
-  }
-
-  @Test
-  public void asOneDimensionalIndex() {
-    Percolation sut = new Percolation(4);
-
-    assertThat(sut.asOneDimensionalIndex(1, 1), CoreMatchers.equalTo(0));
-    assertThat(sut.asOneDimensionalIndex(1, 4), CoreMatchers.equalTo(3));
-    assertThat(sut.asOneDimensionalIndex(2, 1), CoreMatchers.equalTo(4));
-    assertThat(sut.asOneDimensionalIndex(3, 1), CoreMatchers.equalTo(8));
-    assertThat(sut.asOneDimensionalIndex(4, 4), CoreMatchers.equalTo(15));
-  }
 }
