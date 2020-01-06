@@ -1,4 +1,4 @@
-package com.waytoodanny.datastructures.application.deque;
+package com.waytoodanny.datastructures.assignment;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -25,6 +25,7 @@ public class Deque<T> implements Iterable<T> {
 
   }
 
+  //TODO
   /**
    * Your main() method must call directly every public constructor and
    * method to help verify that they work as prescribed (e.g., by printing results to standard output).
