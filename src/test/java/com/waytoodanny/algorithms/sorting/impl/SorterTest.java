@@ -1,23 +1,25 @@
 package com.waytoodanny.algorithms.sorting.impl;
 
+import com.waytoodanny.algorithms.sorting.Sorter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
+import org.junit.runners.Parameterized.Parameters;
 
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(Parameterized.class)
-public class BubbleSortTest {
+public class SorterTest {
 
-  private final BubbleSort<Integer> sut = new BubbleSort<>();
+  private final Sorter<Integer> sut = new SelectionSort<>();
   @Parameter
   public Integer[] input;
   @Parameter(1)
   public Integer[] expected;
 
-  @Parameterized.Parameters(name = "{index}: fib[{0}]={1}")
+  @Parameters
   public static Iterable<Object[]> data() {
     return asList(new Object[][]{
         {new Integer[]{8}, new Integer[]{8}},
