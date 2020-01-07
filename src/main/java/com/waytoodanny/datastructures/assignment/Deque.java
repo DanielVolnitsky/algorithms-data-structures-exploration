@@ -1,5 +1,7 @@
 package com.waytoodanny.datastructures.assignment;
 
+import edu.princeton.cs.algs4.StdOut;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
@@ -25,13 +27,24 @@ public class Deque<T> implements Iterable<T> {
 
   }
 
-  //TODO
-  /**
-   * Your main() method must call directly every public constructor and
-   * method to help verify that they work as prescribed (e.g., by printing results to standard output).
-   */
   public static void main(String[] args) {
+    Deque<String> d = new Deque<>();
 
+    StdOut.println(d.isEmpty());
+    StdOut.println(d.size());
+
+    d.addFirst("a");
+    d.addLast("b");
+    d.addLast("c");
+    d.addFirst("d");
+
+    StdOut.println(d.removeFirst());
+    StdOut.println(d.removeLast());
+
+    Iterator<String> it = d.iterator();
+    while (it.hasNext()) {
+      StdOut.println(it.next());
+    }
   }
 
   public boolean isEmpty() {

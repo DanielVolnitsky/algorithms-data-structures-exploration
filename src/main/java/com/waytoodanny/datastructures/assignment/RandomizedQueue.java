@@ -1,5 +1,6 @@
 package com.waytoodanny.datastructures.assignment;
 
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.Iterator;
@@ -22,10 +23,23 @@ public class RandomizedQueue<T> implements Iterable<T> {
     this.capacity = INITIAL_CAPACITY;
   }
 
-  //TODO
-  // unit testing (required)
   public static void main(String[] args) {
+    RandomizedQueue<String> rq = new RandomizedQueue<>();
 
+    StdOut.println(rq.isEmpty());
+    StdOut.println(rq.size());
+
+    rq.enqueue("a");
+    rq.enqueue("b");
+    rq.enqueue("c");
+
+    StdOut.println(rq.dequeue());
+    StdOut.println(rq.sample());
+
+    Iterator<String> it = rq.iterator();
+    while (it.hasNext()) {
+      StdOut.println(it.next());
+    }
   }
 
   public boolean isEmpty() {
