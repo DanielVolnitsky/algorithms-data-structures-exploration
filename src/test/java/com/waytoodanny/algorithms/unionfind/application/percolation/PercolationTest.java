@@ -1,5 +1,6 @@
 package com.waytoodanny.algorithms.unionfind.application.percolation;
 
+import com.waytoodanny.coursera.week1.Percolation;
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 

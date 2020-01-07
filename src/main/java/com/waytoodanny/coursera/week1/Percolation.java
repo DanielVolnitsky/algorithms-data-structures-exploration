@@ -1,4 +1,4 @@
-package com.waytoodanny.algorithms.unionfind.application.percolation;
+package com.waytoodanny.coursera.week1;
 
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 

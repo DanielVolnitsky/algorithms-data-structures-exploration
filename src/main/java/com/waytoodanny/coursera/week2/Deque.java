@@ -1,22 +1,10 @@
-package com.waytoodanny.datastructures.assignment;
+package com.waytoodanny.coursera.week2;
 
 import edu.princeton.cs.algs4.StdOut;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/**
- * Throw an IllegalArgumentException if the client calls either addFirst() or addLast() with a null argument.
- * Throw a java.util.NoSuchElementException if the client calls either removeFirst() or removeLast when the deque is empty.
- * Throw a java.util.NoSuchElementException if the client calls the next() method in the iterator when there are no more items to return.
- * Throw an UnsupportedOperationException if the client calls the remove() method in the iterator.
- * <p>
- * Performance requirements.
- * Your deque implementation must support each deque operation (including construction)
- * in constant worst-case time. A deque containing n items must use at most 48n + 192 bytes of memory.
- * Additionally, your iterator implementation must support each operation (including construction)
- * in constant worst-case time.
- */
 public class Deque<T> implements Iterable<T> {
 
   private Node<T> head;

@@ -1,5 +1,6 @@
 package com.waytoodanny.datastructures.assignment;
 
+import com.waytoodanny.coursera.week2.RandomizedQueue;
 import org.junit.Test;
 
 import java.util.Iterator;

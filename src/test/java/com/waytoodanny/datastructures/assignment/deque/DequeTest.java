@@ -1,6 +1,6 @@
 package com.waytoodanny.datastructures.assignment.deque;
 
-import com.waytoodanny.datastructures.assignment.Deque;
+import com.waytoodanny.coursera.week2.Deque;
 import org.junit.Test;
 
 import java.util.Iterator;
