@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(Parameterized.class)
 public class SorterTest {
 
-  private final Sorter<Integer> sut = new SelectionSort<>();
+  private final Sorter<Integer> sut = new ShellSort<>();
   @Parameter
   public Integer[] input;
   @Parameter(1)
@@ -24,6 +24,8 @@ public class SorterTest {
     return asList(new Object[][]{
         {new Integer[]{8}, new Integer[]{8}},
         {new Integer[]{8, 7}, new Integer[]{7, 8}},
+        {new Integer[]{5, 6, 2}, new Integer[]{2, 5, 6}},
+        {new Integer[]{12, 34, 54, 2, 3}, new Integer[]{2, 3, 12, 34, 54}},
         {new Integer[]{5, 1, 10, 8, 3, 2, 4, 6, 7, 9}, new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}},
     });
   }
