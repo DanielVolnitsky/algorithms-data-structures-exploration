@@ -1,4 +1,4 @@
-package com.waytoodanny.algorithms.unionfind.implementation;
+package com.waytoodanny.algorithms.unionfind;
 
 public interface UnionFind {
 

@@ -1,6 +1,6 @@
-package com.waytoodanny.algorithms.unionfind.implementation.impl;
+package com.waytoodanny.algorithms.unionfind.impl;
 
-import com.waytoodanny.algorithms.unionfind.implementation.UnionFind;
+import com.waytoodanny.algorithms.unionfind.UnionFind;
 
 /**
  * Modify quick-union to avoid tall trees.

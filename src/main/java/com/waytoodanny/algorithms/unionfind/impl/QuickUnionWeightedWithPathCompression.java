@@ -1,4 +1,4 @@
-package com.waytoodanny.algorithms.unionfind.implementation.impl;
+package com.waytoodanny.algorithms.unionfind.impl;
 
 /**
  * Just after computing the root of p,
