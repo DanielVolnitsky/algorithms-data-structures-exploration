@@ -1,4 +1,4 @@
-package com.waytoodanny.coursera.week3;
+package com.waytoodanny.coursera.week3.collinearpoints;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.waytoodanny.coursera.week3;
+package com.waytoodanny.coursera.week3.collinearpoints;
 
 import edu.princeton.cs.algs4.StdDraw;
 
@@ -18,13 +18,6 @@ public class Point implements Comparable<Point> {
   public Point(int x, int y) {
     this.x = x;
     this.y = y;
-  }
-
-  /**
-   * Unit tests the Point data type.
-   */
-  public static void main(String[] args) {
-    /* YOUR CODE HERE */
   }
 
   /**

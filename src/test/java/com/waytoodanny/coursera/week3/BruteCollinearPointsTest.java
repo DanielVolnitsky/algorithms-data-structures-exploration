@@ -1,5 +1,7 @@
 package com.waytoodanny.coursera.week3;
 
+import com.waytoodanny.coursera.week3.collinearpoints.BruteCollinearPoints;
+import com.waytoodanny.coursera.week3.collinearpoints.Point;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

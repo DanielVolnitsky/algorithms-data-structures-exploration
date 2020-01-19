@@ -1,4 +1,4 @@
-package com.waytoodanny.coursera.week3;
+package com.waytoodanny.coursera.week3.collinearpoints;
 
 public class LineSegment {
   private final Point p;
